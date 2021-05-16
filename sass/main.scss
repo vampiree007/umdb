@@ -1,0 +1,14 @@
+@import "./base/_variables.scss";
+@import "./base/_base.scss";
+@import "./base/_utility.scss";
+@import "./typography/text";
+
+@import "./components/_navbar.scss";
+@import "./components/_banner.scss";
+@import "./components/_card.scss";
+@import "./components/_footer.scss";
+@import "./components/circle";
+@import "./components/banner2";
+
+@import "./page/_index.scss";
+@import "./page/_movies.scss";

@@ -1,0 +1,127 @@
+.home{
+    max-width: $maxPrimaryPageWidth;
+    @media screen and (max-width:600px){
+        max-width: 100%;
+    }
+}
+
+.slider{
+    margin: 30px;
+    margin-top: 40px;
+
+    @media screen and (max-width:600px){
+        margin: 25px 10px;
+    }
+
+    &__menu{
+        height: 35px;
+        &__title{
+            margin-right: 25px;
+        }
+        ul{
+            border: 1px solid $primaryBlue;
+            height: 100%;
+            border-radius: 30px;
+
+            li{
+                min-width: 100px;
+                height: 100%;
+                padding: 0 20px;
+                text-align: center;
+                color: $blueR;
+                font-weight: 500;
+                cursor: pointer;
+                font-size: 14px;
+                padding-top: 1px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .active{
+                background: #000;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                border-radius: 30px;
+                margin-left: -1px;
+                box-sizing: content-box;
+            }
+            
+        }
+        select{
+            border: none;
+            height: 100%;
+            border-radius: 30px;
+            padding: 0 20px;
+            appearance: none;
+            position: relative;
+            background: $blueGradient;
+            color: #fff;
+
+            &::after{
+                content: ">";
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 9;
+            }
+        }
+    }
+}
+.slider__slide{
+    margin-top: 20px;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+        height: 8px;
+        width: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(219,219,219,1);
+        border-radius: 20px;
+    }
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    
+    &__inner{
+        display: flex;
+        padding-bottom: 20px;
+    }
+}
+
+.slider__2{
+    margin: 0px 0;
+    margin-top: -30px;
+    padding: 20px 0;
+}
+.sliderBackground{
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: 50px 0 50px 0;
+
+    .slider__menu{
+        ul{
+            border: 1px solid #fff;
+            li{
+                color: #fff;
+            }
+            .active{
+                background: $blueGradient;
+                margin-left: -0.5px;
+                color: #fff;
+                box-sizing: border-box;
+            }
+        }
+        select{
+            border: 1px solid #fff;
+            background-color:$blueGradient;
+            color: #fff;
+
+        }
+    }
+}

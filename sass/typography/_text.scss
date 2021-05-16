@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+body{
+    font-family: Arial, Helvetica, sans-serif;
+};
+h2{
+    font-size: 48px;
+    line-height: 52px;
+}
+h3{
+    font-size: 31px;
+    line-height: 38px;
+}
+h4{
+    font-size: 22px;
+    line-height: 30px;
+}
+h5{
+    font-size: 16px;
+}
+@media screen and (max-width:600px){
+    h2{
+        font-size: 38px;
+        line-height: 52px;
+    }
+    h3{
+        font-size: 23px;
+        line-height: 28px;
+    } 
+    h4{
+        font-size: 18px;
+        line-height: 28px;
+    } 
+}

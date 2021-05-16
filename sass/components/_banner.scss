@@ -1,0 +1,49 @@
+.banner{
+    min-height: 430px;
+    width: 100%;
+    background-image: $bannerGradient;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 30px 30px 30px;
+    color: #fff;
+
+    @media screen and (max-width:600px){
+        padding: 60px 20px 30px 20px;
+    }
+
+    h2{
+        font-weight: 600;
+
+    }
+
+    &__search{
+        width: 100%;
+        margin-top: 60px;
+        position: relative;
+        input{
+            width: 100%;
+            height: 46px;
+            line-height: 46px;
+            font-size: 1.1em;
+            color: rgba(0,0,0,0.5);
+            border: none;
+            border-radius: 30px;
+            padding: 0 25px;
+            font-size: 16px;
+            @media screen and (max-width:600px){
+                height: 40px;
+            }
+        }
+        button{
+            height: 100%;
+            color: #fff;
+            position: absolute;
+            right: 0px;
+            z-index: 3;
+            background: $buttonGradient;
+            padding: 10px 28px;
+            border-radius: 30px;
+            font-size: 16px;
+        }
+    }
+}

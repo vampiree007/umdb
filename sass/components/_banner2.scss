@@ -1,0 +1,81 @@
+.banner2{
+    width: 100%;
+    background-color: #000;
+
+    &_inner{
+        display: flex;
+    };
+    &_left{
+        width: 70%;
+    };
+    &_right{
+        width: 30%;
+    };
+}
+
+.card7t{
+    width: 100%;
+    padding: 15px;
+    padding-bottom: 0px;
+
+    &_card{
+        width: 100%;
+        display: flex;
+        color: #f2f2f8;
+        margin-bottom: 15px;
+
+        &_left{
+            width: 25%;
+            box-shadow: $shadow;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+        &_right{
+            width: 75%;
+            padding: 0 15px;
+
+            .info{
+                display: flex;
+                margin-bottom: 10px;
+
+                .play{
+                    width: 33px;
+                    height: 33px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid #f2f2f8;
+                    margin-right: 10px;
+                    cursor: pointer;
+
+                    border-radius: 50%;
+                    i{
+                        font-size: 12px;
+                    }
+
+                    &:hover{
+                        color: gold;
+                        border: 1px solid gold;
+                    }
+                }
+                .time{
+                    padding-top: 7px;
+                }
+            }
+            h5{
+                font-size: 17px;
+                font-weight: 400;
+
+                &:hover{
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+            p{
+                color: rgb(173, 173, 173);
+                margin-top: 5px;
+                font-size: 14px;
+            }
+        }
+    }
+}

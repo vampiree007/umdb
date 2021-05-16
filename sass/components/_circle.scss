@@ -1,0 +1,23 @@
+.circle{
+    position: absolute;
+    bottom: -52px;
+    left: 10px;
+}
+.circle-progress{
+    width: 50px;
+}
+.circle-progress-value {
+	stroke-width: 12px;
+}
+.circle--blue .circle-progress-value{
+    stroke: hsl(210, 100%, 45%);
+}
+.circle-progress-circle {
+	stroke: transparent;
+	stroke-width: 22px;
+	fill: $primaryBlue;
+}
+.circle-progress-text {
+	font-size: 23px;
+	fill: white;
+}

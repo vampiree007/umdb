@@ -46,6 +46,7 @@
 .gradient{
     background: $greenGradient;
     padding: 30px 20px;
+    padding-bottom: 0;
 }
 .gradientImage{
     background-image: url("/images/backGreen.svg");
@@ -56,6 +57,14 @@
 }
 .gradientGreenOp{
     background: $opaqueGradient;
+}
+.background2{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.shadow_card{
+    box-shadow: $cardShadow;
 }
 @media screen and (max-width: 950px){
     .tabletX{

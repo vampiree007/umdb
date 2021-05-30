@@ -8,13 +8,16 @@
 .slider{
     margin: 30px;
     margin-top: 40px;
+    margin-bottom:0px;
 
     @media screen and (max-width:600px){
         margin: 25px 10px;
+        margin-bottom: 10px;
     }
 
     &__menu{
         height: 35px;
+        margin-bottom: 30px;
         &__title{
             margin-right: 25px;
         }
@@ -55,7 +58,7 @@
             padding: 0 20px;
             appearance: none;
             position: relative;
-            background: $blueGradient;
+            background: #000;
             color: #fff;
 
             &::after{
@@ -89,20 +92,23 @@
     
     &__inner{
         display: flex;
-        padding-bottom: 20px;
+        padding-bottom: 50px;
     }
 }
 
 .slider__2{
     margin: 0px 0;
-    margin-top: -30px;
+    margin-top: 0px;
     padding: 20px 0;
+    margin-bottom: 0;
+    padding-top: 0;
 }
 .sliderBackground{
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-    padding: 50px 0 50px 0;
+    padding: 30px 0 30px 0;
+    padding-bottom: 0;
 
     .slider__menu{
         ul{
@@ -122,6 +128,81 @@
             background-color:$blueGradient;
             color: #fff;
 
+        }
+    }
+}
+
+.explore{
+    background-color: #111111;
+    color: #fff;
+    padding: 20px 20px;
+    padding-bottom: 0;
+
+    h4{
+        margin: 20px 0;
+        padding-left: 15px;
+        position: relative;
+
+        &::after{
+            content: " ";
+            position: absolute;
+            height: 100%;
+            width: 5px;
+            bottom: -10px;
+            left: 0;
+            top: 0;
+            background-color: $primaryBlue;
+        }
+    }
+
+    &_slider{
+        display: flex;
+        overflow: auto;
+        padding-bottom: 40px;
+
+        &::-webkit-scrollbar {
+            height: 4px;
+            width: 8px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: gray;
+            border-radius: 20px;
+        }
+        &::-webkit-scrollbar-track {
+            background: transparent;
+        }
+    }
+
+    &_card{
+        margin-right: 40px;
+        text-align: center;
+        .image{
+            height: 130px;
+            width: 130px;
+            border-radius: 50% !important;
+            background-size: cover;
+            background-position: center;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+
+        h5{
+            font-weight: 400;
+        }
+
+        .age{
+            background-color: rgb(4, 46, 80);
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            border-radius: 50%;
+            font-size: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            margin-top: 10px;
         }
     }
 }

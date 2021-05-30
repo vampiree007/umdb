@@ -1,0 +1,240 @@
+.login{
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    min-height: 100vh;
+    height: auto;
+    background: #2c303a url(https://cpwebassets.codepen.io/assets/logos/codepen-logo-pattern-b477875ac66ffc21e4485a989358c220fac283caf17e602346a50d4250970254.png);
+
+    @media screen and (max-width:783px){
+        min-height: 100vh !important;
+        min-width: 100%;
+    }
+
+    &_inner{
+        width: 80%;
+        margin: auto;
+        min-width: 780px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        @media screen and (max-width:783px){
+            transform: translate(0,0);
+            position: static;
+            padding-top: 60px;
+        };
+        &_main{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @media screen and (max-width:783px){
+                flex-direction: column;
+            };
+
+            &_left{
+                width:  54%;
+                padding-right: 10%;
+                &_logo{
+                    width: 140px;
+                    margin-bottom: 10px;
+                    @media screen and(max-width:600px){
+                        width: 170px;
+                    }
+                    @media screen and(max-width:600px){
+                        width: 150px;
+                    }
+                    @media screen and(max-width:600px){
+                        width: 120px;
+                    }
+                }
+                h1{
+                    font-size: 60px;
+                    color: #fff;
+                    margin-bottom: 10px;
+                    @media screen and(max-width:600px){
+                        font-size: 50px;
+                    }
+                    @media screen and(max-width:600px){
+                        font-size: 40px;
+                    }
+                    @media screen and(max-width:600px){
+                        font-size: 30px;
+                    }
+                }
+                &_child{
+                    width: 100%;
+                    margin-bottom: 20px;
+                    p{
+                        color: #9b9dad;
+                        @media screen and(max-width:600px){
+                            font-size: 13px;
+                        }
+                    }
+                   input{
+                       width: 100%;
+                       font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+                       font-size: 13px;
+                       padding: 10px;
+                       margin-top: 5px;
+                       outline: 0;
+                       background: #d5d7de;
+                       border: 3px solid #d5d7de;
+                       border-radius: 3px;
+                       @media screen and(max-width:600px){
+                        font-size: 11px;
+                    }
+                   }
+                    &--login {
+                       button{
+                        background-color: #47cf73;
+                        border: 3px solid #47cf73;
+                        padding: 10px;
+                        border-radius: 3px;
+                        width: 100%;
+                        font-size: 16px;
+                        @media screen and(max-width:600px){
+                            font-size: 13px;
+                        }
+                       }
+                    }
+                    &--forgot {
+                        button{
+                         border: 3px solid transparent;
+                         padding: 10px;
+                         border-radius: 3px;
+                         width: 100%;
+                         font-size: 16px;
+                         color: #76daff;
+                         @media screen and(max-width:600px){
+                            font-size: 13px;
+                        }
+                        }
+                     }
+                }
+                @media screen and(max-width:783px) {
+                    width: 100%;
+                    padding: 0%;
+                }
+            }
+            &_middle{
+                position: relative;
+
+                &_or{
+                    border: 2px solid grey;
+                    padding: 12px 10px;
+                    position: absolute;
+                    color: grey;
+                    border-radius: 10px;
+                    left: -25px;
+
+                    @media screen and(max-width:783px) {
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                    &::before{
+                        width: 2px;
+                        height: 140px;
+                        background-color: grey;
+                        content: "";
+                        position: absolute;
+                        bottom: 44px;
+                        left: 20px;
+                        @media screen and(max-width: 783px){
+                            display: none;
+                        };
+                    };
+                    &::after{
+                        width: 2px;
+                        height: 140px;
+                        background-color: grey;
+                        content: "";
+                        position: absolute;
+                        bottom: -140px;
+                        left: 20px;
+                        @media screen and(max-width: 783px){
+                            display: none;
+                        };
+                    };
+                };
+                
+            };
+            &_right{
+                width: 45%;
+                padding-left: 10%;
+                min-width: 280px;
+                &_child{
+                    margin-bottom: 20px;
+                    button{
+                        width: 90%;
+                        display: flex;
+                        color: #fff;
+                        justify-content: space-between;
+                        font-size: 15px;
+                        outline: none;
+                        align-items: center;
+                        i{
+                            font-size: 22px;
+                            margin-left: 10px;
+                        }
+                        @media screen and(max-width:600px){
+                            font-size: 11px;
+                        }
+                    }
+                    &--twitter{
+                        background: #60b5f0;
+                        color: white;
+                        text-align: left;
+                        border-radius: 3px;
+                        padding: 10px;
+                    }
+                    &--github{
+                        background: #868ca0;
+                        color: white;
+                        border-radius: 3px;
+                        padding: 10px;
+                    }
+                    &--facebook{
+                        background: #4464a2;
+                        color: white;
+                        border-radius: 3px;
+                        padding: 10px;
+                    }
+                }
+                @media screen and(max-width:783px) {
+                    width: 100%;
+                    padding: 0%;
+                    margin-top: 80px;
+                    min-width: auto;
+                }
+            }
+        }
+        &_account{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            border-radius: 3px;
+            background-color: #2c303a;
+            p{
+                color: #fff;
+                span{
+                    color: #76daff;
+                }
+                @media screen and(max-width:600px){
+                    font-size: 10px;
+                }
+            }
+        }
+        @media screen and (max-width:783px) {
+            width: 100%;
+            margin: auto;
+            min-width: auto;
+        }
+    }
+}

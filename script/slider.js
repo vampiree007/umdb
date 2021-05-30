@@ -1,5 +1,5 @@
 var slider = tns({
-    container: '.my-slider',
+    container: '.my_slider',
     items: 1,
     controls: false,
     controlsContainer: ['.prev', '.next'],

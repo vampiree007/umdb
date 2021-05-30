@@ -11,6 +11,128 @@
     &_right{
         width: 30%;
     };
+
+    @media screen and (max-width:1120px){
+        &_inner{
+            flex-direction: column;
+        };
+        &_left{
+            width: 100%;
+        };
+        &_right{
+            width: 100%;
+        };
+    }
+}
+.banner_slider{
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    min-height: 460px;
+
+    &::after{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        content: "";
+        background: $blackGradient;
+        z-index: 9;
+        top: 0;
+        left: 0;
+    }
+
+    .banner_portrait{
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        height: 170px;
+        width: 170px;
+        box-shadow: $shadow;
+        border-radius: 400px !important;
+        z-index: 999;
+        background-size: cover;
+        background-position: center;
+        background-color: gray;
+        border-radius: 3px;
+        overflow: hidden;
+    }
+
+    .prev, .next{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.647);
+        color: #fff;
+        width: 45px;
+        height: 80px;
+        z-index: 99;
+        cursor: pointer;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+    }
+    .prev{
+        left: 0;
+    }
+    .next{
+        right: 0;
+    }
+
+    &_slide{
+        width: 100%;
+        height: 100%;
+
+        &_image{
+            width: 100%;
+            height: 100%;
+            min-height: 460px;
+            background-size: cover;
+            background-position: top;
+            position: relative;
+
+            p{
+                font-size: 39px;
+                position: absolute;
+                color: #fff;
+                bottom: 50px;
+                right: 40px;
+                z-index: 9999;
+                text-transform: uppercase;
+                font-family: $oswald;
+
+
+                &::after{
+                    height: 5px;
+                    width: 50%;
+                    background-color: green;
+                    content: " ";
+                    bottom: -10px;
+                    z-index: 999;
+                    position: absolute;
+                    left: 50%;
+                }
+
+                @media screen and (max-width:600px){
+                    width: 80%;
+                    font-size: 30px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    text-align: center;
+                    bottom: 65px;
+
+                    &::after{
+                        right: auto;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+            }
+        }
+    }
 }
 
 .card7t{
@@ -18,21 +140,54 @@
     padding: 15px;
     padding-bottom: 0px;
 
+    &_container{
+        &::-webkit-scrollbar {
+            height: 8px;
+            width: 8px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: rgba(219,219,219,1);
+            border-radius: 20px;
+        }
+        &::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        @media screen and (max-width:1120px){
+            display: flex;
+            padding-top: 5px;
+        }
+        @media screen and (max-width:1020px){
+            overflow: auto;
+        }
+    }
     &_card{
         width: 100%;
         display: flex;
         color: #f2f2f8;
         margin-bottom: 15px;
+        min-width: 350px;
+
+        @media screen and (max-width:380px){
+            min-width: 320px;
+        }
 
         &_left{
             width: 25%;
             box-shadow: $shadow;
             border-radius: 3px;
             overflow: hidden;
+
+            @media screen and (max-width:1020px){
+                width: 35%;
+            }
         }
         &_right{
             width: 75%;
             padding: 0 15px;
+            @media screen and (max-width:1020px){
+                width: 65%;
+                padding: 15px;
+            }
 
             .info{
                 display: flex;
@@ -65,6 +220,8 @@
             h5{
                 font-size: 17px;
                 font-weight: 400;
+
+                
 
                 &:hover{
                     text-decoration: underline;
